@@ -36,7 +36,7 @@ SELECT * FROM NBAPlayer_17_18
 
 
 `@script`
-In this lesson I will be looking at the ordering of SQL syntax in the construction of a query verses the processing order of the query in the database. For this I will be using a selection of player statistics from the 2017 and 2018 NBA basketball season.
+In this lesson I will be looking at the ordering of SQL syntax in the construction of a query verses the processing order of the query in the database. For this, I will be using a selection of player statistics from the 2017 and 2018 NBA basketball season.
 
 
 ---
@@ -99,8 +99,8 @@ Jamal Murray                   DEN  1352
 Stephen Curry                  GSW  1346
 ........
 (142 row(s) affected)
-```{{2}}
-![](http://assets.datacamp.com/production/repositories/3898/datasets/16f74425f1ff07b6930577c581e911668774f0c9/OrderSentence2.jpg) {{3}}
+```
+![](http://assets.datacamp.com/production/repositories/3898/datasets/16f74425f1ff07b6930577c581e911668774f0c9/OrderSentence2.jpg) {{2}}
 
 
 `@script`
@@ -125,6 +125,7 @@ ORDER BY Pts DESC
 ```
 Invalid object name 'NBAPlayer1718'.        --1. FROM
 ```{{2}}
+
 ```sql
 SELECT Name,Team,Points
 FROM NBAPlayer_17_18
