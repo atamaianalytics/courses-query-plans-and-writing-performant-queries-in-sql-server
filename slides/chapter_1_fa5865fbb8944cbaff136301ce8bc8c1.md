@@ -102,7 +102,7 @@ WHERE ShipArea = 'France'
 ORDER BY ShipCity,Customer
 ```
 ```
-Incorrect syntax near the keyword 'Order'. --1. FROM
+Incorrect syntax near the keyword 'Order'.        --1. FROM
 ```
 
 ```sql
@@ -112,9 +112,9 @@ WHERE ShipArea = 'France'
 ORDER BY ShipCity,Customer
 ```
 ```
-Invalid column name 'ShipArea'.
-Invalid column name 'ShipTown'.
-Invalid column name 'Customer'.
+Invalid column name 'ShipArea'.                  --2. WHERE
+Invalid column name 'ShipTown'.                  --3. SELECT
+Invalid column name 'Customer'.                  --4. ORDER BY
 ```
 
 
