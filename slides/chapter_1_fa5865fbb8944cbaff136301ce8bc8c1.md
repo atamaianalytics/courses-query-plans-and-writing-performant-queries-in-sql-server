@@ -66,7 +66,6 @@ Stephen Curry                  GSW  1346
 ........
 (142 row(s) affected)
 ```{{2}}
-
 ![](http://assets.datacamp.com/production/repositories/3898/datasets/81bb932e0391abaf675dbd7d77a77cd2a09e2064/OrderSentence1.jpg) {{3}}
 
 
