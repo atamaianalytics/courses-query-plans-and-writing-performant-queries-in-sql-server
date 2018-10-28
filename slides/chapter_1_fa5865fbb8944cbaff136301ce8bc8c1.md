@@ -269,10 +269,10 @@ key: "4c57ab90fe"
 ```sql
 SELECT Team, SUM(Points) AS TotalPoints
 FROM NBAPlayer_17_18
-WHERE (MinutesPlayed/GamesPlayed) > 20
+WHERE (MinutesPlayed/GamesPlayed) > 20        -- Filter the Row
 GROUP BY Team
 HAVING AVG(MinutesPlayed/GamesPlayed) > 30
-ORDER BY TotalPoints DESC
+ORDER BY TotalPoints DESC                     -- Filter The Group
 ```{{1}}
 ```
 Team TotalPoints
