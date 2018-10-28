@@ -49,19 +49,30 @@ key: "c2b599326d"
 
 `@part1`
 ```sql
-SELECT OrderID,CustomerID,ShipCity -- 1. SELECT
-FROM Orders                        -- 2. FROM
-WHERE ShipCountry = 'France'       -- 3. WHERE
-ORDER BY ShipCity,CustomerID       -- 4. ORDER BY
+SELECT PlayerName,Team,Points  -- 1. SELECT
+FROM FROM NBAPlayer_17_18      -- 2. FROM
+WHERE Position = 'PG'          -- 3. WHERE
+ORDER BY Points DESC           -- 4. ORDER BY
+```
+```
+PlayerName                     Team Points
+------------------------------ ---- -----------
+Russell Westbrook              OKC  2028
+Damian Lillard                 POR  1962
+Kemba Walker                   CHO  1770
+Kyrie Irving                   BOS  1466
+Jamal Murray                   DEN  1352
+Stephen Curry                  GSW  1346
+........
+(142 row(s) affected)
 ```
 
-**SELECT** rows in the columns _OrderID_,_CustomerID_ and _ShipCity_ **FROM** the Orders table, **WHERE** values in the column _ShipCountry_ = _France_,
-then **ORDER BY** values in the _ShipCity_ and _CustomerID_
-Columns.
+**SELECT** rows in the columns _PlayerName_,_Team_ and _Points_ **FROM** the **NBAPlayer_17_18**  table, **WHERE** values in the column _Position_ = _PG_ 
+(for Point Guard), then **ORDER BY** values in the _Points_ column descending
 
 
 `@script`
-Here is a simple query.  The SQL syntax is in the correct order and when executed will return the desired results.  If I write the query out in a sentence it will be something like SELECT rows in the columns OrderID, CustomerID and ShipCity FROM the Orders table, WHERE values in the column ShipCountry = France, then ORDER BY values in the ShipCity and CustomerID Columns. The order of the SQL syntax in the query is SELECT, FROM WHERE and ORDER BY.
+Here is a simple query.  The SQL syntax is in the correct order and when executed will return the desired results.  If I write the query out in a sentence it will be something like SELECT rows in the columns PlayerName, Team and Points FROM the NBAPlayer_17_18  table, WHERE values in the column Position = PG (for Point Guard), then ORDER BY values in the Points column descending. The order of the SQL syntax in the query is SELECT, FROM WHERE and ORDER.
 
 
 ---
