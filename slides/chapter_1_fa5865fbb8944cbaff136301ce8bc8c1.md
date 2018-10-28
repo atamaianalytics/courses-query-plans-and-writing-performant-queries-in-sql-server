@@ -21,7 +21,7 @@ title: Geologist, Atamai Analytics
 
 
 ---
-## NORTHWIND Tables
+## NBA Player Statistics 2007-2018
 
 ```yaml
 type: "FullSlide"
@@ -29,7 +29,10 @@ key: "081c294c7c"
 ```
 
 `@part1`
-![](http://assets.datacamp.com/production/repositories/3898/datasets/f4427279612b14dff1d8a673bf3ac0809bac65d2/Orders.jpg)
+```sql
+SELECT * FROM NBAPlayer_17_18
+```
+![](http://assets.datacamp.com/production/repositories/3898/datasets/bbdfe735ba09931a69fa7898831038f91c3eaaa1/NBA.jpg)
 
 
 `@script`
