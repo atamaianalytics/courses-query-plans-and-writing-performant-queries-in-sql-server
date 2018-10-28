@@ -124,6 +124,33 @@ When I execute the query, FROM is processed first – I get an error because the
 
 
 ---
+## Logical Processing Order
+
+```yaml
+type: "FullCodeSlide"
+key: "33e2171dec"
+```
+
+`@part1`
+```sql
+FROM        --1
+ON          --2
+JOIN        --3
+WHERE       --4
+GROUP BY    --5
+HAVING      --6
+SELECT      --7
+DISTINCT    --8
+ORDER BY    --9
+TOP         --10
+```
+
+
+`@script`
+
+
+
+---
 ## Final Slide
 
 ```yaml
