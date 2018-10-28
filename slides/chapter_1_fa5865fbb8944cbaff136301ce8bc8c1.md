@@ -72,7 +72,7 @@ Stephen Curry                  GSW  1346
 
 
 `@script`
-Here is a simple query.  The SQL syntax is in the correct order and when executed will return the desired results.  If I write the query out in a sentence it will be something like SELECT rows in the columns PlayerName, Team and Points FROM the NBAPlayer_17_18  table, WHERE values in the column Position = PG (for Point Guard), then ORDER BY values in the Points column descending. The order of the SQL syntax in the query is SELECT, FROM WHERE and ORDER.
+Here is a simple query.  The SQL syntax is in the correct order and when executed will return the desired results.  If I write the query out in a sentence it will be something like SELECT rows in the columns PlayerName, Team and Points FROM the NBAPlayer_17_18  table, WHERE values in the column Position = PG (for Point Guard), then ORDER BY values in the Points column descending. The order of the SQL syntax in the query is SELECT, FROM, WHERE and ORDER BY.
 
 
 ---
