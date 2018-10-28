@@ -118,12 +118,12 @@ key: "cfc6ffc6f0"
 `@part1`
 ```sql
 SELECT Name,Team,Points
-FROM NBAPlayer1718
+FROM NBAPlayer
 WHERE Pos = 'PG'
 ORDER BY Pts DESC
 ```{{1}}
 ```
-Invalid object name 'NBAPlayer1718'.        --1. FROM
+Invalid object name 'NBAPlayer'.        --1. FROM
 ```{{2}}
 
 ```sql
