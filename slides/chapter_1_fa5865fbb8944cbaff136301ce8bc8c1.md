@@ -58,7 +58,7 @@ Columns.
 
 
 `@script`
-
+Here is a simple query.  The SQL syntax is in the correct order and when executed will return the desired results.  If I write the query out in a sentence it will be something like SELECT rows in the columns OrderID, CustomerID and ShipCity FROM the Orders table, WHERE values in the column ShipCountry = France, then ORDER BY values in the ShipCity and CustomerID Columns. The order of the SQL syntax in the query is SELECT, FROM WHERE and ORDER BY.
 
 
 ---
