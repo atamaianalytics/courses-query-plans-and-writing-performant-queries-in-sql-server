@@ -155,7 +155,7 @@ Here is the Logical Processing Order for the most commonly used SQL Syntax in th
 
 ```yaml
 type: "FullCodeSlide"
-key: "9e639e4914"
+key: "624b19780f"
 ```
 
 `@part1`
@@ -169,6 +169,7 @@ ORDER BY od.TotalPrice
 ```
 Invalid column name 'TotalPrice'.
 ```
+
 ```sql
 SELECT OrderID,ProductID,UnitPrice,Quantity,TotalPrice 
 FROM
@@ -177,6 +178,14 @@ FROM
 FROM [Order Details]) od
 WHERE od.TotalPrice > 1000
 ORDER BY od.TotalPrice
+```
+```
+OrderID     ProductID   UnitPrice             Quantity TotalPrice
+----------- ----------- --------------------- -------- ---------------------
+10324       35          14.40                 70       1008.00
+10603       22          21.00                 48       1008.00
+…………
+(350 row(s) affected)
 ```
 
 
