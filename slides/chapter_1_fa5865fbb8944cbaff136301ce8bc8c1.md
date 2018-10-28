@@ -84,15 +84,24 @@ key: "c8cf5fde51"
 
 `@part1`
 ```sql
-SELECT OrderID,CustomerID,ShipCity -- 3. SELECT
-FROM Orders                        -- 1. FROM
-WHERE ShipCountry = 'France'       -- 2. WHERE
-ORDER BY ShipCity,CustomerID       -- 4. ORDER BY
+SELECT PlayerName,Team,Points  -- 3. SELECT
+FROM FROM NBAPlayer_17_18      -- 1. FROM
+WHERE Position = 'PG'          -- 2. WHERE
+ORDER BY Points DESC           -- 4. ORDER BY
+```{{1}}
 ```
-
-**FROM** the table _Orders_, **WHERE** values in the column _ShipCountry_ = _France_,
-**SELECT** rows in the columns _OrderID_, _CustomerID_ and _ShipCity_,
-then **ORDER BY** values in the _ShipCity_ and _CustomerID_ Columns.
+PlayerName                     Team Points
+------------------------------ ---- -----------
+Russell Westbrook              OKC  2028
+Damian Lillard                 POR  1962
+Kemba Walker                   CHO  1770
+Kyrie Irving                   BOS  1466
+Jamal Murray                   DEN  1352
+Stephen Curry                  GSW  1346
+........
+(142 row(s) affected)
+```{{2}}
+![](http://assets.datacamp.com/production/repositories/3898/datasets/16f74425f1ff07b6930577c581e911668774f0c9/OrderSentence2.jpg) {{3}}
 
 
 `@script`
