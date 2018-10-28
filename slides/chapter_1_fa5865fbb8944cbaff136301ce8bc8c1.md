@@ -247,9 +247,6 @@ Team TotalPoints
 HOU  8550
 LAL  7911
 IND  7781
-NOP  7745
-MIA  7672
-PHI  7486
 ……………………….
 (30 row(s) affected)
 ```{{4}}
