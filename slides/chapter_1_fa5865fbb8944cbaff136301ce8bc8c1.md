@@ -97,10 +97,10 @@ Kemba Walker                   CHO  1770
 Kyrie Irving                   BOS  1466
 Jamal Murray                   DEN  1352
 Stephen Curry                  GSW  1346
-........
+........{{2}}
 (142 row(s) affected)
-```{{2}}
-![](http://assets.datacamp.com/production/repositories/3898/datasets/16f74425f1ff07b6930577c581e911668774f0c9/OrderSentence2.jpg) {{3}}
+```
+![](http://assets.datacamp.com/production/repositories/3898/datasets/16f74425f1ff07b6930577c581e911668774f0c9/OrderSentence2.jpg){{3}}
 
 
 `@script`
