@@ -62,6 +62,31 @@ Here is a simple query.  The SQL syntax is in the correct order and when execute
 
 
 ---
+## Processing Order
+
+```yaml
+type: "FullCodeSlide"
+key: "c8cf5fde51"
+```
+
+`@part1`
+```sql
+SELECT OrderID,CustomerID,ShipCity -- 3. SELECT
+FROM Orders                        -- 1. FROM
+WHERE ShipCountry = 'France'       -- 2. WHERE
+ORDER BY ShipCity,CustomerID       -- 4. ORDER BY
+```
+
+**FROM** the table _Orders_, **WHERE** values in the column _ShipCountry_ = _France_,
+**SELECT** rows in the columns _OrderID_, _CustomerID_ and _ShipCity_,
+then **ORDER BY** values in the _ShipCity_ and _CustomerID_ Columns.
+
+
+`@script`
+
+
+
+---
 ## Final Slide
 
 ```yaml
