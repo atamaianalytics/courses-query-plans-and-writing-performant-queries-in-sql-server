@@ -13,7 +13,7 @@ key: "e872f3528d"
 `@lower_third`
 
 name: Dean Smith
-title: undefined
+title: Geologist, Atamai Analytics
 
 
 `@script`
