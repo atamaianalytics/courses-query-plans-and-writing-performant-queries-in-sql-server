@@ -43,7 +43,7 @@ This is an example exercise.
 
 ---
 
-## Insert exercise title here
+## The Good Query
 
 ```yaml
 type: VideoExercise
