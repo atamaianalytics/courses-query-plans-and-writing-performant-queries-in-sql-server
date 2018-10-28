@@ -147,7 +147,7 @@ TOP         --10
 
 
 `@script`
-
+Here is the Logical Processing Order for the most commonly used SQL Syntax in the SELECT Statement.  Note how far down the order SELECT occurs.  You can imaging that all the processing before SELECT is concerned with finding, merging, aggregating and filtering the data and that processing after SELECT is concerned with actions on the final data extracted.  Steps after SELECT tend to be quite expensive to process and should only be used where necessary.  As a data scientist, working with real world large data sets, having an understanding of the processing order can help determine why a query will not execute and also help to look at ways to optimize the query for performance.
 
 
 ---
