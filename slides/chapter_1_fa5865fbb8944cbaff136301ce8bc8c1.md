@@ -117,26 +117,25 @@ key: "cfc6ffc6f0"
 
 `@part1`
 ```sql
-SELECT OrderID,CustomerID,ShipTown
-FROM Order
-WHERE ShipArea = 'France'
-ORDER BY ShipCity,Customer
+SELECT Name,Team,Points
+FROM NBAPlayer1718
+WHERE Pos = 'PG'
+ORDER BY Pts DESC
+```{{1}}
 ```
-```
-Incorrect syntax near the keyword 'Order'.        --1. FROM
-```
-
+Invalid object name 'NBAPlayer1718'.        --1. FROM
+```{{2}}
 ```sql
-SELECT OrderID,CustomerID,ShipTown
-FROM Orders
-WHERE ShipArea = 'France'
-ORDER BY ShipCity,Customer
+SELECT Name,Team,Points
+FROM NBAPlayer_17_18
+WHERE Pos = 'PG'
+ORDER BY Pts DESC
+```{{3}}
 ```
-```
-Invalid column name 'ShipArea'.                  --2. WHERE
-Invalid column name 'ShipTown'.                  --3. SELECT
-Invalid column name 'Customer'.                  --4. ORDER BY
-```
+Invalid column name 'Pos'.                  --2. WHERE
+Invalid column name 'Name'.                 --3. SELECT
+Invalid column name 'Pts'.                  --4. ORDER BY
+```{{4}}
 
 
 `@script`
