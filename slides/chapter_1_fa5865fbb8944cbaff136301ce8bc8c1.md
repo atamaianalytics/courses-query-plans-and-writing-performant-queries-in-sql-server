@@ -21,6 +21,22 @@ title: Geologist, Atamai Analytics
 
 
 ---
+## NORTHWIND Tables
+
+```yaml
+type: "FullSlide"
+key: "081c294c7c"
+```
+
+`@part1`
+![](http://assets.datacamp.com/production/repositories/3898/datasets/f4427279612b14dff1d8a673bf3ac0809bac65d2/Orders.jpg)
+
+
+`@script`
+
+
+
+---
 ## Final Slide
 
 ```yaml
