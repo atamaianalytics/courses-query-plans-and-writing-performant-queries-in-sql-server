@@ -184,8 +184,51 @@ OrderID     ProductID   UnitPrice             Quantity TotalPrice
 ----------- ----------- --------------------- -------- ---------------------
 10324       35          14.40                 70       1008.00
 10603       22          21.00                 48       1008.00
-…………
+........
 (350 row(s) affected)
+```
+
+
+`@script`
+
+
+
+---
+## Ordering Example 4.
+
+```yaml
+type: "FullCodeSlide"
+key: "727d24fa99"
+```
+
+`@part1`
+```sql
+SELECT CustomerID,ShipCountry,COUNT(*) AS CountOrders
+FROM Orders
+GROUP BY CustomerID,ShipCountry
+HAVING Freight > 200
+```
+```
+Column 'Orders.Freight' is invalid in the HAVING clause because it is not 
+contained in either an aggregate function or the GROUP BY clause.
+```
+
+```sql
+SELECT CustomerID,ShipCountry,Count(*) AS CountOrders
+FROM Orders
+WHERE Freight > 200
+GROUP BY CustomerID,ShipCountry
+```
+```
+CustomerID ShipCountry     CountOrders
+---------- --------------- -----------
+OCEAN      Argentina       1
+ERNSH      Austria         9
+PICCO      Austria         2
+SUPRD      Belgium         1
+GOURL      Brazil          1
+..........
+(31 row(s) affected)
 ```
 
 
