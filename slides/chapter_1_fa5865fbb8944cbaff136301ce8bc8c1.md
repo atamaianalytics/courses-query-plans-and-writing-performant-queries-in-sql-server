@@ -119,7 +119,8 @@ Invalid column name 'Customer'.                  --4. ORDER BY
 
 
 `@script`
-
+Let’s look at an example of this.  I’m using the same query, the ordering of the SQL syntax is correct but I have some typo errors in the table and column names. 
+When I execute the query, FROM is processed first – I get an error because the table Order is not part of the database.  When I execute again, after fixing the error to the correct table name, which is Orders, I get addition errors listed in order of the processing order.  WHERE cannot process ShipArea, SELECT cannot process ShipTown and ORDER BY cannot process Customer because none of these are columns in the table Orders.  They should by ShipCountry, ShipCity and CustomerID respectively.
 
 
 ---
