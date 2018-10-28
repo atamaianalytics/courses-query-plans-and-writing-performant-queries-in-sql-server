@@ -151,6 +151,40 @@ Here is the Logical Processing Order for the most commonly used SQL Syntax in th
 
 
 ---
+## Ordering Example 2.
+
+```yaml
+type: "FullCodeSlide"
+key: "9e639e4914"
+```
+
+`@part1`
+```sql
+SELECT OrderID,ProductID,UnitPrice,Quantity
+	,(UnitPrice*Quantity) AS TotalPrice 
+FROM [Order Details] od
+WHERE od.TotalPrice > 1000
+ORDER BY od.TotalPrice
+```
+```
+Invalid column name 'TotalPrice'.
+```
+```sql
+SELECT OrderID,ProductID,UnitPrice,Quantity,TotalPrice 
+FROM
+(SELECT OrderID,ProductID,UnitPrice,Quantity
+,(UnitPrice*Quantity) AS TotalPrice 
+FROM [Order Details]) od
+WHERE od.TotalPrice > 1000
+ORDER BY od.TotalPrice
+```
+
+
+`@script`
+
+
+
+---
 ## Final Slide
 
 ```yaml
