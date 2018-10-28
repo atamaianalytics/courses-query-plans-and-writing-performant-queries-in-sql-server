@@ -36,7 +36,7 @@ SELECT * FROM NBAPlayer_17_18
 
 
 `@script`
-I want to start by looking at the ordering of SQL syntax in the construction of a query verses the processing order of the query in the database.  In the following examples I will be using the Orders and Order Details tables from the NORTHWIND database.
+In this lesson I will be looking at the ordering of SQL syntax in the construction of a query verses the processing order of the query in the database. For this I will be using a selection of player statistics from the 2017 and 2018 NBA basketball season.
 
 
 ---
