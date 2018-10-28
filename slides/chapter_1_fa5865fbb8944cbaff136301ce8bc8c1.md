@@ -87,6 +87,42 @@ then **ORDER BY** values in the _ShipCity_ and _CustomerID_ Columns.
 
 
 ---
+## Ordering Example 1.
+
+```yaml
+type: "FullCodeSlide"
+key: "cfc6ffc6f0"
+```
+
+`@part1`
+```sql
+SELECT OrderID,CustomerID,ShipTown
+FROM Order
+WHERE ShipArea = 'France'
+ORDER BY ShipCity,Customer
+```
+```
+Incorrect syntax near the keyword 'Order'. --1. FROM
+```
+
+```sql
+SELECT OrderID,CustomerID,ShipTown
+FROM Orders
+WHERE ShipArea = 'France'
+ORDER BY ShipCity,Customer
+```
+```
+Invalid column name 'ShipArea'.
+Invalid column name 'ShipTown'.
+Invalid column name 'Customer'.
+```
+
+
+`@script`
+
+
+
+---
 ## Final Slide
 
 ```yaml
