@@ -53,7 +53,7 @@ SELECT PlayerName,Team,Points  -- 1. SELECT
 FROM FROM NBAPlayer_17_18      -- 2. FROM
 WHERE Position = 'PG'          -- 3. WHERE
 ORDER BY Points DESC           -- 4. ORDER BY
-```
+```{{1}}
 ```
 PlayerName                     Team Points
 ------------------------------ ---- -----------
@@ -65,14 +65,13 @@ Jamal Murray                   DEN  1352
 Stephen Curry                  GSW  1346
 ........
 (142 row(s) affected)
-```
+```{{2}}
 
-**SELECT** rows in the columns _PlayerName_,_Team_ and _Points_ **FROM** the **NBAPlayer_17_18**  table, **WHERE** values in the column _Position_ = _PG_ 
-(for Point Guard), then **ORDER BY** values in the _Points_ column descending
+![](http://assets.datacamp.com/production/repositories/3898/datasets/81bb932e0391abaf675dbd7d77a77cd2a09e2064/OrderSentence1.jpg) {{3}}
 
 
 `@script`
-Here is a simple query.  The SQL syntax is in the correct order and when executed will return the desired results.  If I write the query out in a sentence it will be something like SELECT rows in the columns PlayerName, Team and Points FROM the NBAPlayer_17_18  table, WHERE values in the column Position = PG (for Point Guard), then ORDER BY values in the Points column descending. The order of the SQL syntax in the query is SELECT, FROM, WHERE and ORDER BY.
+Here is a simple query.  The SQL syntax is in the correct order and when executed will return the desired results.  If I write the query out in a sentence it will be something like SELECT rows in the columns PlayerName, Team and Points FROM the NBAPlayer_17_18  table, WHERE values in the Column Position = PG (for Point Guard), then ORDER BY values in the Points column descending. The order of the SQL syntax in the query is SELECT, FROM, WHERE and ORDER BY.
 
 
 ---
