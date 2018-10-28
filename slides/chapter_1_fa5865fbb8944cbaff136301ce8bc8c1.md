@@ -37,6 +37,31 @@ I want to start by looking at the ordering of SQL syntax in the construction of 
 
 
 ---
+## Query Order
+
+```yaml
+type: "FullCodeSlide"
+key: "c2b599326d"
+```
+
+`@part1`
+```sql
+SELECT OrderID,CustomerID,ShipCity -- 1. SELECT
+FROM Orders                        -- 2. FROM
+WHERE ShipCountry = 'France'       -- 3. WHERE
+ORDER BY ShipCity,CustomerID       -- 4. ORDER BY
+```
+
+**SELECT** rows in the columns _OrderID_,_CustomerID_ and _ShipCity_ **FROM** the Orders table, **WHERE** values in the column _ShipCountry_ = _France_,
+then **ORDER BY** values in the _ShipCity_ and _CustomerID_
+Columns.
+
+
+`@script`
+
+
+
+---
 ## Final Slide
 
 ```yaml
