@@ -257,6 +257,38 @@ IND  7781
 
 
 ---
+## HAVING the Correct Order
+
+```yaml
+type: "FullCodeSlide"
+key: "4c57ab90fe"
+```
+
+`@part1`
+```sql
+SELECT Team, SUM(Points) AS TotalPoints
+FROM NBAPlayer_17_18
+WHERE (MinutesPlayed/GamesPlayed) > 20
+GROUP BY Team
+HAVING AVG(MinutesPlayed/GamesPlayed) > 30
+ORDER BY TotalPoints DESC
+```{{1}}
+```
+Team TotalPoints
+---- -----------
+MIN  6495
+DEN  6468
+OKC  6455
+
+(3 row(s) affected)
+```{{2}}
+
+
+`@script`
+
+
+
+---
 ## Final Slide
 
 ```yaml
