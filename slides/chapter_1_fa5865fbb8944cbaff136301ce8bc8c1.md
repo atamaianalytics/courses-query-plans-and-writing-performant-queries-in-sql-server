@@ -180,33 +180,32 @@ key: "624b19780f"
 
 `@part1`
 ```sql
-SELECT OrderID,ProductID,UnitPrice,Quantity
-	,(UnitPrice*Quantity) AS TotalPrice 
-FROM [Order Details] od
-WHERE od.TotalPrice > 1000
-ORDER BY od.TotalPrice
+SELECT PlayerName,Team,(DRebound+ORebound) AS TotalRebounds
+FROM NBAPlayer_17_18
+WHERE TotalRebounds > 1000
+ORDER BY TotalRebounds DESC
+```{{1}}
 ```
-```
-Invalid column name 'TotalPrice'.
-```
+Invalid column name 'TotalRebounds'.
+```{{2}}
 
 ```sql
-SELECT OrderID,ProductID,UnitPrice,Quantity,TotalPrice 
+SELECT PlayerName,Team,TotalRebounds
 FROM
-(SELECT OrderID,ProductID,UnitPrice,Quantity
-,(UnitPrice*Quantity) AS TotalPrice 
-FROM [Order Details]) od
-WHERE od.TotalPrice > 1000
-ORDER BY od.TotalPrice
+      (SELECT PlayerName,Team,(DRebound+ORebound) AS TotalRebounds
+       FROM NBAPlayer_17_18) tr
+WHERE TotalRebounds > 1000
+ORDER BY TotalRebounds DESC
+```{{3}}
 ```
-```
-OrderID     ProductID   UnitPrice             Quantity TotalPrice
------------ ----------- --------------------- -------- ---------------------
-10324       35          14.40                 70       1008.00
-10603       22          21.00                 48       1008.00
-........
-(350 row(s) affected)
-```
+PlayerName                     Team TotalRebounds
+------------------------------ ---- -------------
+Andre Drummond                 DET  1247
+DeAndre Jordan                 LAC  1171
+Karl-Anthony Towns             MIN  1012
+Dwight Howard                  CHO  1012
+(4 row(s) affected)
+```{{4}}
 
 
 `@script`
@@ -214,7 +213,7 @@ OrderID     ProductID   UnitPrice             Quantity TotalPrice
 
 
 ---
-## Ordering Example 4.
+## Ordering Example 3.
 
 ```yaml
 type: "FullCodeSlide"
@@ -223,33 +222,37 @@ key: "727d24fa99"
 
 `@part1`
 ```sql
-SELECT CustomerID,ShipCountry,COUNT(*) AS CountOrders
-FROM Orders
-GROUP BY CustomerID,ShipCountry
-HAVING Freight > 200
+SELECT Team, SUM(Points) AS TotalPoints
+FROM NBAPlayer_17_18
+GROUP BY Team
+HAVING (MinutesPlayed/GamesPlayed) > 20
+ORDER BY TotalPoints DESC
+```{{1}}
 ```
-```
-Column 'Orders.Freight' is invalid in the HAVING clause because it is not 
-contained in either an aggregate function or the GROUP BY clause.
-```
+Column 'NBAPlayer_17_18.MinutesPlayed' is invalid in the HAVING clause 
+because it is not contained in either an aggregate function or the 
+GROUP BY clause.
+```{{2}}
 
 ```sql
-SELECT CustomerID,ShipCountry,Count(*) AS CountOrders
-FROM Orders
-WHERE Freight > 200
-GROUP BY CustomerID,ShipCountry
+SELECT Team, SUM(Points) AS TotalPoints
+FROM NBAPlayer_17_18
+WHERE (MinutesPlayed/GamesPlayed) > 20
+GROUP BY Team
+ORDER BY TotalPoints DESC
+```{{3}}
 ```
-```
-CustomerID ShipCountry     CountOrders
----------- --------------- -----------
-OCEAN      Argentina       1
-ERNSH      Austria         9
-PICCO      Austria         2
-SUPRD      Belgium         1
-GOURL      Brazil          1
-..........
-(31 row(s) affected)
-```
+Team TotalPoints
+---- -----------
+HOU  8550
+LAL  7911
+IND  7781
+NOP  7745
+MIA  7672
+PHI  7486
+……………………….
+(30 row(s) affected)
+```{{4}}
 
 
 `@script`
