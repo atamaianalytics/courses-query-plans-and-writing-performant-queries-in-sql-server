@@ -1,0 +1,1 @@
+# courses-query-plans-and-writing-performant-queries-in-sql-server
