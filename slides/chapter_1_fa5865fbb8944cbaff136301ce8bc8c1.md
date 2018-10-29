@@ -153,18 +153,7 @@ key: "33e2171dec"
 ```
 
 `@part1`
-```sql
-FROM        --1
-ON          --2
-JOIN        --3
-WHERE       --4
-GROUP BY    --5
-HAVING      --6
-SELECT      --7
-DISTINCT    --8
-ORDER BY    --9
-TOP         --10
-```
+![](http://assets.datacamp.com/production/repositories/3898/datasets/ba1d26ca5048e959d3b88cc9f1afefddf80d7b42/LogicalProcessingOrder.jpg)
 
 
 `@script`
