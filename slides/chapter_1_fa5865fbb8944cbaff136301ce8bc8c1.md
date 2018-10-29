@@ -21,7 +21,7 @@ title: Geologist, Atamai Analytics
 
 
 ---
-## NBA Player Statistics 2007-2018
+## NBA Player Statistics 2017-2018
 
 ```yaml
 type: "FullSlide"
