@@ -84,7 +84,7 @@ key: "c8cf5fde51"
 `@part1`
 ```sql
 SELECT PlayerName,Team,Points  -- 3. SELECT
-FROM FROM NBAPlayer_17_18      -- 1. FROM
+FROM NBAPlayer_17_18      -- 1. FROM
 WHERE Position = 'PG'          -- 2. WHERE
 ORDER BY Points DESC           -- 4. ORDER BY
 ```{{1}}
